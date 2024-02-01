@@ -32,8 +32,8 @@ Contributions are welcome! If you'd like to contribute to the project, please fo
 
 This project was created by Cesar Jimenez
 
-- GitHub: [Your GitHub Profile](https://github.com/cheternal7890)
-- LinkedIn: [Your LinkedIn Profile](https://www.linkedin.com/in/cesarjimenez-/)
+- GitHub: (https://github.com/cheternal7890)
+- LinkedIn: (https://www.linkedin.com/in/cesarjimenez-/)
 
 ## License
 
