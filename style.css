@@ -77,7 +77,6 @@ body {
 @media only screen and (min-width: 240px) {
   .mainBodyContainer {
     text-align: left;
-    max-width: 1600px;
   }
 }
 
@@ -168,15 +167,14 @@ body {
 
 @media only screen and (min-width: 240px) {
   .footerContainer {
-    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
   }
 
   .footer {
     font-size: 35px;
-    display: flex;
-    justify-content: center;
-    text-align: center;
     flex-wrap: wrap;
   }
 }

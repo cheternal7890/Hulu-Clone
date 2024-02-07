@@ -10,7 +10,7 @@
     ></script>
     <link rel="stylesheet" href="style.css" type="text/css" />
   </head>
-  
+
   <body class="body">
     <header class="topHeader" id="topHeader">
       <nav class = "navigationSpacer">
@@ -31,12 +31,10 @@
           </li>
         </ul>
 
-
         <div class = "icon">
           <i class="fa-solid fa-user"></i>
           <span class = "icon-item">hoolu</span>
         </div>
-  
 
       </nav>
 
@@ -80,7 +78,7 @@
         </div>
       </section>
 
-      <section id="smallCardsContainer" class="smallCardsContainer">
+      <section id="keepWatchingContainer" class="keepWatchingContainer">
         <h1>KEEP WATCHING</h1>
 
         <div class="miniCards">
@@ -91,7 +89,7 @@
               alt="Movie Preview Screenshot"
               class="cardPreviewImage"
             />
-            <p class="movieDescriptionSmall">Candy</p>
+            <p class="movieDescriptionSmall"></p>
           </a>
 
           <a href="" div class="card">
@@ -100,7 +98,7 @@
               alt="Movie Preview Screenshot"
               class="cardPreviewImage"
             />
-            <p class="movieDescriptionSmall">Bob's Burgers</p>
+            <p class="movieDescriptionSmall"></p>
           </a>
 
           <a href="" div class="card">
@@ -109,7 +107,7 @@
               alt="Movie Preview Screenshot"
               class="cardPreviewImage"
             />
-            <p class="movieDescriptionSmall">Sons of Anarchy</p>
+            <p class="movieDescriptionSmall"></p>
           </a>
 
           <a href="" div class="card">
@@ -118,7 +116,7 @@
               alt="Movie Preview Screenshot"
               class="cardPreviewImage"
             />
-            <p class="movieDescriptionSmall">Parasite</p>
+            <p class="movieDescriptionSmall"></p>
           </a>
 
           <a href="" div class="card">
@@ -127,7 +125,7 @@
               alt="Movie Preview Screenshot"
               class="cardPreviewImage"
             />
-            <p class="movieDescriptionSmall">Futarama</p>
+            <p class="movieDescriptionSmall"></p>
           </a>
 
 
@@ -137,19 +135,76 @@
               alt="Movie Preview Screenshot"
               class="cardPreviewImage"
             />
-            <p class="movieDescriptionSmall">Abominable</p>
+            <p class="movieDescriptionSmall"></p>
+          </a>
+        </div>
+      </section>
+
+
+      <section id="actionContainer" class="actionContainer">
+        <h1>ACTION</h1>
+
+        <div class="miniCards">
+          
+          <a href="" div class="card">
+            <img
+              src="/img/Candy Image.jpg"
+              alt="Movie Preview Screenshot"
+              class="cardPreviewImage"
+            />
+            <p class="movieDescriptionSmall"></p>
           </a>
 
+          <a href="" div class="card">
+            <img
+              src="/img/Bob's Burgers.jpg"
+              alt="Movie Preview Screenshot"
+              class="cardPreviewImage"
+            />
+            <p class="movieDescriptionSmall"></p>
+          </a>
+
+          <a href="" div class="card">
+            <img
+              src="/img/Sons of Anarchy.jpg"
+              alt="Movie Preview Screenshot"
+              class="cardPreviewImage"
+            />
+            <p class="movieDescriptionSmall"></p>
+          </a>
+
+          <a href="" div class="card">
+            <img
+              src="/img/Parasite Image.jpg"
+              alt="Movie Preview Screenshot"
+              class="cardPreviewImage"
+            />
+            <p class="movieDescriptionSmall"></p>
+          </a>
+
+          <a href="" div class="card">
+            <img
+              src="/img/Futurama Image.jpg"
+              alt="Movie Preview Screenshot"
+              class="cardPreviewImage"
+            />
+            <p class="movieDescriptionSmall"></p>
+          </a>
+
+
+          <a href="" div class="card">
+            <img
+              src="/img/Abominable Image.jpg"
+              alt="Movie Preview Screenshot"
+              class="cardPreviewImage"
+            />
+            <p class="movieDescriptionSmall"></p>
+          </a>
+        
+          </div>
           
       </section>
 
-      
-
-      
-
-      
-
-      
 
       <footer class="footerContainer">
         <div class="footer">
@@ -157,10 +212,73 @@
 
           </ul>
         </div>
-
-        <p>Hulu Clone made by Cesar Jimenez. Code on Github.</p>
-        <p>I do not the images here, all rights go to Hulu. This project was created for educational purposes.</p>
+        <p>Hulu Clone made by Cesar Jimenez. Code on Github. I do not the images here, all rights go to Hulu. This project was created for educational purposes.</p>
       </footer>
     </main>
+
+    <script>
+      var imagePaths = {
+        "bigTopContainer": [
+          "./img/Abominable Image.jpg",
+          "./img/Bob's Burgers.jpg",
+          "./img/Candy Image.jpg",
+          "./img/Futurama Image.jpg",
+          "./img/Parasite Image.jpg",
+          "./img/Solar Opposites Image.jpg",
+          "./img/Sons of Anarchy.jpg",
+        ],
+
+
+        "keepWatchingContainer": [
+         "./img/Abominable Image.jpg",
+          "./img/Bob's Burgers.jpg",
+          "./img/Candy Image.jpg",
+          "./img/Futurama Image.jpg",
+          "./img/Parasite Image.jpg",
+          "./img/Solar Opposites Image.jpg",
+          "./img/Sons of Anarchy.jpg",
+        ],
+
+        "actionContainer": [
+          "./img/Abominable Image.jpg",
+          "./img/Bob's Burgers.jpg",
+          "./img/Candy Image.jpg",
+          "./img/Futurama Image.jpg",
+          "./img/Parasite Image.jpg",
+          "./img/Solar Opposites Image.jpg",
+          "./img/Sons of Anarchy.jpg",
+        ],
+  
+      };
+    
+      function getRandomInt(min, max) {
+        return Math.floor(Math.random() * (max - min + 1)) + min;
+      }
+    
+      function shuffleArray(array) {
+        for (var i = array.length - 1; i > 0; i--) {
+          var j = Math.floor(Math.random() * (i + 1));
+          var temp = array[i];
+          array[i] = array[j];
+          array[j] = temp;
+        }
+        return array;
+      }
+    
+      window.onload = function() {
+        for (var sectionId in imagePaths) {
+          var sectionImages = imagePaths[sectionId];
+          sectionImages = shuffleArray(sectionImages); // Shuffle the array
+          var sectionElement = document.getElementById(sectionId);
+          var imgElements = sectionElement.querySelectorAll('.cardPreviewImage');
+    
+          for (var i = 0; i < imgElements.length; i++) {
+            imgElements[i].src = sectionImages[i % sectionImages.length]; // Assign images without repetition
+          }
+        }
+      };
+    </script>
+    
+
   </body>
 </html>
