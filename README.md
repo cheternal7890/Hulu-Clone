@@ -12,8 +12,9 @@ You can view a live demo of the Hoolu Clone [here](https://hoolu.netlify.app/).
 ## Features
 
 - **Responsive Design**: The clone is designed to be responsive and accessible across various devices and screen sizes.
-- **HTML & CSS**: Built using standard HTML5 and CSS3, making it easy to understand and customize.
+- **HTML & CSS**: Built primarily using standard HTML5 and CSS3, making it easy to understand and customize.
 - **User-friendly Interface**: The interface replicates key features of Hulu, including navigation, content display, and interactive elements.
+- **Dynamically Changes Content**: With the use of Javascript, the preview content dynamically shuffles on page-load to imitate personalized recommendations on Hulu.
 
 
 ## Installation
