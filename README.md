@@ -2,12 +2,11 @@
 
 This project is a clone of Hulu, created using HTML5, CSS3, and Photoshop. It mimics the design and layout of Hulu's website to provide a similar user experience.
 
-
-![Hulu Clone Image](https://github.com/cheternal7890/Hulu-Clone/assets/157067093/1bf07f4f-2532-409e-8251-fc3f87696344)
-
 ## Live Demo
 
 You can view a live demo of the Hoolu Clone [here](https://hoolu.netlify.app/).
+
+![Hulu Clone Image](https://github.com/cheternal7890/Hulu-Clone/assets/157067093/1bf07f4f-2532-409e-8251-fc3f87696344)
 
 ## Features
 
