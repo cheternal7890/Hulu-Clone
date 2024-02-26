@@ -2,7 +2,8 @@
   margin: 0;
   padding: 10px 10px;
   box-sizing: border-box;
-  font-family: sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   color: #ffffff;
   scroll-behavior: smooth;
 }
@@ -12,104 +13,108 @@ body {
 }
 
 /* Top Menu */
+.navigationSpacer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  font-size: 1.5rem;
+  align-items: center;
+}
 
-@media only screen and (min-width: 240px) {
-  .navigationSpacer {
+.icon-item {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  color: #1ce783;
+}
+
+.icon i:hover {
+  background-color: #363d45;
+  border-radius: 25px;
+}
+
+.navMenu {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  list-style: none;
+  font-size: 25px;
+}
+
+.navMenu i:hover {
+  background-color: #363d45;
+  border-radius: 25px;
+}
+
+.navMenu li {
+  display: inline-block;
+}
+
+.navMenu a {
+  text-decoration: none;
+  padding: 5px 15px;
+  color: #9ea2a5;
+  transition: color 100ms;
+}
+
+.navMenu a:hover {
+  color: #fbfeff;
+  border-radius: 5px;
+  background-color: #363d45;
+}
+
+@media only screen and (max-width: 1200px) {
+  .navMenu {
+    display: none;
+  }
+
+  .icon {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: right;
+    width: 100%;
+    top: 0;
+    right: 0;
   }
 
   .icon-item {
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 650;
-    font-size: 24px;
-    color: #1ce783;
-  }
-
-  .icon i:hover {
-    background-color: #363d45;
-    border-radius: 25px;
-  }
-}
-
-@media only screen and (min-width: 240px) {
-  .nav {
-    justify-content: space-between;
-    display: flex;
-    align-items: center;
-  }
-
-  .navMenu {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    list-style: none;
-    font-size: 25px;
-  }
-
-  .navMenu i:hover {
-    background-color: #363d45;
-    border-radius: 25px;
-  }
-
-  .navMenu li {
-    display: inline-block;
-  }
-
-  .navMenu a {
-    text-decoration: none;
-    padding: 5px 15px;
-    color: #9ea2a5;
-    transition: color 100ms;
-  }
-
-  .navMenu a:hover {
-    color: #fbfeff;
-    border-radius: 5px;
-    background-color: #363d45;
+    display: none;
   }
 }
 
 /* Movies For You Section */
 
-@media only screen and (min-width: 240px) {
-  .mainBodyContainer {
-    text-align: left;
-  }
+.mainBodyContainer {
+  text-align: left;
 }
 
 /* Big Main Cards */
-@media only screen and (min-width: 240px) {
-  .mainCardsContainer {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    text-decoration: none;
-  }
 
-  .card {
-    width: 600px;
-    flex-direction: row;
-    margin-bottom: 15px;
-    text-decoration: none;
-  }
+.mainCardsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  text-decoration: none;
+}
 
-  .cardPreviewImage {
-    object-fit: contain;
-    width: 100%;
-  }
+.card {
+  width: 600px;
+  flex-direction: row;
+  margin-bottom: 15px;
+  text-decoration: none;
+}
 
-  .movieTitle {
-    color: white;
-    font-weight: 500;
-  }
+.cardPreviewImage {
+  object-fit: contain;
+  width: 100%;
+}
 
-  .movieDescription {
-    color: white;
-    opacity: 0.5;
-  }
+.movieTitle {
+  color: white;
+  font-weight: 500;
+}
+
+.movieDescription {
+  color: white;
+  opacity: 0.5;
 }
 
 .card {
@@ -158,7 +163,7 @@ body {
 
 @media only screen and (max-width: 480px) {
   .card {
-    width: 100%; /* Adjust as needed for mobile screens */
+    width: 85%; /* Adjust as needed for mobile screens */
     margin-right: 0; /* Remove margin for better responsiveness */
   }
 }

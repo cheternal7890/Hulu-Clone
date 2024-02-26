@@ -13,9 +13,9 @@
 
   <body class="body">
     <header class="topHeader" id="topHeader">
-      <nav class = "navigationSpacer">
+      <nav class="navigationSpacer">
+        <span class="icon-item">hoolu</span>
         <ul class="navMenu">
-          <i class="fas fa-search"></i>
           <li class="navItem">
             <a href="" class="navLinks">Home</a>
           </li>
@@ -27,18 +27,17 @@
           </li>
 
           <li class="navItem">
-            <a href="https://www.hulu.com/hub/movies" class="navLinks">Movies</a>
+            <a href="https://www.hulu.com/hub/movies" class="navLinks"
+              >Movies</a
+            >
           </li>
         </ul>
 
-        <div class = "icon">
+        <div class="icon">
           <i class="fa-solid fa-user"></i>
-          <span class = "icon-item">hoolu</span>
+          <i class="fa-solid fa-bars"></i>
         </div>
-
       </nav>
-
-      
     </header>
 
     <main class="mainBodyContainer">
@@ -82,7 +81,6 @@
         <h1>KEEP WATCHING</h1>
 
         <div class="miniCards">
-          
           <a href="" div class="card">
             <img
               src="/img/Candy Image.avif"
@@ -128,7 +126,6 @@
             <p class="movieDescriptionSmall"></p>
           </a>
 
-
           <a href="" div class="card">
             <img
               src="/img/Abominable Image.avif"
@@ -139,13 +136,11 @@
           </a>
         </div>
       </section>
-
 
       <section id="actionContainer" class="actionContainer">
         <h1>ACTION</h1>
 
         <div class="miniCards">
-          
           <a href="" div class="card">
             <img
               src="/img/Candy Image.avif"
@@ -191,6 +186,65 @@
             <p class="movieDescriptionSmall"></p>
           </a>
 
+          <a href="" div class="card">
+            <img
+              src="/img/Abominable Image.avif"
+              alt="Movie Preview Screenshot"
+              class="cardPreviewImage"
+            />
+            <p class="movieDescriptionSmall"></p>
+          </a>
+        </div>
+      </section>
+
+      <section id="comedyContainer" class="comedyContainer">
+        <h1>COMEDY</h1>
+
+        <div class="miniCards">
+          <a href="" div class="card">
+            <img
+              src="/img/Candy Image.avif"
+              alt="Movie Preview Screenshot"
+              class="cardPreviewImage"
+            />
+            <p class="movieDescriptionSmall"></p>
+          </a>
+
+          <a href="" div class="card">
+            <img
+              src="/img/Bob's Burgers.avif"
+              alt="Movie Preview Screenshot"
+              class="cardPreviewImage"
+            />
+            <p class="movieDescriptionSmall"></p>
+          </a>
+
+          <a href="" div class="card">
+            <img
+              src="/img/Sons of Anarchy.avif"
+              alt="Movie Preview Screenshot"
+              class="cardPreviewImage"
+            />
+            <p class="movieDescriptionSmall"></p>
+          </a>
+
+          <a href="" div class="card">
+            <img
+              src="/img/Parasite Image.avif"
+              alt="Movie Preview Screenshot"
+              class="cardPreviewImage"
+            />
+            <p class="movieDescriptionSmall"></p>
+          </a>
+
+          <a href="" div class="card">
+            <img
+              src="/img/Futurama Image.avif"
+              alt="Movie Preview Screenshot"
+              class="cardPreviewImage"
+            />
+            <p class="movieDescriptionSmall"></p>
+          </a>
 
           <a href="" div class="card">
             <img
@@ -200,25 +254,24 @@
             />
             <p class="movieDescriptionSmall"></p>
           </a>
-        
-          </div>
-          
+        </div>
       </section>
-
 
       <footer class="footerContainer">
         <div class="footer">
-          <ul class="footerIcons">
-
-          </ul>
+          <ul class="footerIcons"></ul>
         </div>
-        <p>Hulu Clone made by Cesar Jimenez. Code on Github. I do not the images here, all rights go to Hulu. This project was created for educational purposes.</p>
+        <p>
+          Hulu Clone made by Cesar Jimenez. Code on Github. I do not the images
+          here, all rights go to Hulu. This project was created for educational
+          purposes.
+        </p>
       </footer>
     </main>
 
     <script>
       var imagePaths = {
-        "bigTopContainer": [
+        bigTopContainer: [
           "./img/Abominable Image.avif",
           "./img/Bob's Burgers.avif",
           "./img/Candy Image.avif",
@@ -228,18 +281,7 @@
           "./img/Sons of Anarchy.avif",
         ],
 
-
-        "keepWatchingContainer": [
-         "./img/Abominable Image.avif",
-          "./img/Bob's Burgers.avif",
-          "./img/Candy Image.avif",
-          "./img/Futurama Image.avif",
-          "./img/Parasite Image.avif",
-          "./img/Solar Opposites Image.avif",
-          "./img/Sons of Anarchy.avif",
-        ],
-
-        "actionContainer": [
+        keepWatchingContainer: [
           "./img/Abominable Image.avif",
           "./img/Bob's Burgers.avif",
           "./img/Candy Image.avif",
@@ -248,13 +290,32 @@
           "./img/Solar Opposites Image.avif",
           "./img/Sons of Anarchy.avif",
         ],
-  
+
+        actionContainer: [
+          "./img/Abominable Image.avif",
+          "./img/Bob's Burgers.avif",
+          "./img/Candy Image.avif",
+          "./img/Futurama Image.avif",
+          "./img/Parasite Image.avif",
+          "./img/Solar Opposites Image.avif",
+          "./img/Sons of Anarchy.avif",
+        ],
+
+        comedyContainer: [
+          "./img/Abominable Image.avif",
+          "./img/Bob's Burgers.avif",
+          "./img/Candy Image.avif",
+          "./img/Futurama Image.avif",
+          "./img/Parasite Image.avif",
+          "./img/Solar Opposites Image.avif",
+          "./img/Sons of Anarchy.avif",
+        ],
       };
-    
+
       function getRandomInt(min, max) {
         return Math.floor(Math.random() * (max - min + 1)) + min;
       }
-    
+
       function shuffleArray(array) {
         for (var i = array.length - 1; i > 0; i--) {
           var j = Math.floor(Math.random() * (i + 1));
@@ -264,21 +325,20 @@
         }
         return array;
       }
-    
-      window.onload = function() {
+
+      window.onload = function () {
         for (var sectionId in imagePaths) {
           var sectionImages = imagePaths[sectionId];
           sectionImages = shuffleArray(sectionImages); // Shuffle the array
           var sectionElement = document.getElementById(sectionId);
-          var imgElements = sectionElement.querySelectorAll('.cardPreviewImage');
-    
+          var imgElements =
+            sectionElement.querySelectorAll(".cardPreviewImage");
+
           for (var i = 0; i < imgElements.length; i++) {
             imgElements[i].src = sectionImages[i % sectionImages.length]; // Assign images without repetition
           }
         }
       };
     </script>
-    
-
   </body>
 </html>
